@@ -6,6 +6,14 @@ app = Flask (__name__)
 @app.route('/index.html')
 @app.route('/')
 def index():
+    card_data = (
+        ("KFC", "What is KFC?", "More", "static/images/card1.png"),
+        ("Homemade KFC", "How to make chicken", "", "static/images/card2.png"),
+        ("KFC Resturaunts", "Description", "Button text", "static/images/card3.png"),
+        ("Title", "Description", "Button text", "static/images/card4.png"),
+        ("Title", "Description", "Button text", "static/images/card5.png"),
+        ("Title", "Description", "Button text", "static/images/card6.png"),
+    )
     return render_template("index.html"),200
 
  
