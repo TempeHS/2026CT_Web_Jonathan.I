@@ -14,7 +14,7 @@ def index():
         ("Title", "Description", "Button text", "static/images/card5.png"),
         ("Title", "Description", "Button text", "static/images/card6.png"),
     )
-    return render_template("index.html"),200
+    return render_template("index.html", cards=card_data),200
 
  
 if __name__ == '__main__':
