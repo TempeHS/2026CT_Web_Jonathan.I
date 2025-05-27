@@ -1,19 +1,22 @@
 {% extends 'layout.html' %} {% block content %} {% include
-"partials/slider.html" %} {% for card in cards %}
+"partials/slider.html" %}
 <div class="container">
   <div class="row">
-    <div class="card" style="width: 18rem">
-      <img src="{{ card[3]}}" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">{{card[0]}}</h5>
-        <p class="card-text">
-          {{card[1]}} Some quick example text to build on the card title and
-          make up the bulk of the card’s content.
-        </p>
-        <a href="#" class="btn btn-primary">{{card[0]}}</a>
+    {% for card in cards %}
+    <div class="col">
+      <div class="card">
+        <img src="{{ card[3]}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{card[0]}}</h5>
+          <p class="card-text">
+            {{card[1]}} Some quick example text to build on the card title and
+            make up the bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">{{card[0]}}</a>
+        </div>
       </div>
     </div>
+    {% endfor %}
   </div>
 </div>
-
-{% endfor %} {% endblock %}
+{% endblock %}
