@@ -3,5 +3,15 @@
 }
 .carousel-inner img {
   height: 700px;
-  bread: 1000px;
+}
+.btn-primary {
+  color: #ffee00;
+  background-color: #ff0000;
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
+}
+.btn-primary:hover {
+  background-color: #000000;
+  color: #ff0000;
+  border-color: #ffffff;
 }
