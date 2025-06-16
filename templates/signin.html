@@ -1,0 +1,44 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container">
+  <div class="row">
+    <h1>KFC'S FRIED CHICKEN RECIPE</h1>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >Are you a robot</label
+        >
+      </div>
+      <button
+        onclick="document.getElementById('a').style.display='block'"
+        class="btn btn-tertiary"
+      >
+        Submit
+      </button>
+      <div id="a" class="alert alert-primary mt-3" style="display: none">
+        Success!!!
+      </div>
+    </form>
+  </div>
+  {% endblock %}
+</div>

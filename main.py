@@ -25,6 +25,10 @@ def contact():
 def recipes():
     return render_template("recipes.html"), 200
 
+@app.route('/signin.html')
+def signin():
+    return render_template("signin.html"), 200
+
 
 
 if __name__ == '__main__':
