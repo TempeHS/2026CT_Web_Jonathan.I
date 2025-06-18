@@ -1,30 +1,59 @@
 {% extends 'layout.html' %} {% block content %}
 <div class="container">
   <div class="row">
-    <h1>Recipe for KFC's fried chiken</h1>
-    <div style="height: 100px"></div>
+    <div class="d-flex align-items-center">
+      <strong role="status">Loading...</strong>
+      <div class="spinner-border ms-auto" aria-hidden="true"></div>
+    </div>
 
-    <h2>Ingredients</h2>
-    <ul>
-      <li>2/3 tbs fine salt</li>
-      <li>2 cups (300g) plain flour</li>
-      <li>1/2 tablespoon dried thyme leaves</li>
-      <li>1/2 tbs dried basil leaves</li>
-      <li>1 tbs celery salt</li>
-      <li>1/3 tbs dried oregano leaves</li>
-      <li>1 tbs ground black pepper</li>
-      <li>2 tbs garlic salt</li>
-      <li>4 tbs paprika</li>
-      <li>1 tbs ground ginger</li>
-      <li>3 tbs ground white pepper</li>
-      <li>1 cup (250ml) buttermilk</li>
-      <li>1 egg</li>
-      <li>Canola oil, to deep-fry</li>
-      <li>
-        1 chicken, jointed into individual pieces, breast pieces cut in half for
-        more even frying
-      </li>
-    </ul>
+
+    <h1>Recipe for KFC's fried chicken</h1>
+    <div style="height: 100px"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-9"><h2></h2></div>
+        <div class="col-4">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>2/3 tbs fine salt</li>
+            <li>2 cups (300g) plain flour</li>
+            <li>1/2 tablespoon dried thyme leaves</li>
+            <li>1/2 tbs dried basil leaves</li>
+            <li>1 tbs celery salt</li>
+            <li>1/3 tbs dried oregano leaves</li>
+            <li>1 tbs ground black pepper</li>
+            <li>2 tbs garlic salt</li>
+            <li>4 tbs paprika</li>
+            <li>1 tbs ground ginger</li>
+            <li>3 tbs ground white pepper</li>
+            <li>1 cup (250ml) buttermilk</li>
+            <li>1 egg</li>
+            <li>Canola oil, to deep-fry</li>
+            <li>
+              1 chicken, jointed into individual pieces, breast pieces cut in
+              half for more even frying
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <h2>Recipe</h2>
+          <ol>
+            <li>
+              Mix the flour in a bowl with all the herbs and spices the set
+              aside
+            </li>
+            <li>Beat the eggs untill fully mixed</li>
+            <li>
+              Mix the buttermilk and egg together in a separate bowl until
+              combined. Soak the chicken in the buttermilk mixture at room
+              temperature for 20-30 minutes.
+              <li>Remove chicken from the buttermilk, allowing excess to drip off. Dip the chicken pieces in the herb-spice-flour mixture to coat all sides, shaking off excess. Allow to sit on a rack over a baking tray for 20 minutes.</li>
+            </li>
+            <li>Meanwhile, heat 7-8cm canola oil in a large casserole or similar heavy-based pan with high sides over medium-high heat to 180°C. (Use a deep-frying thermometer to check the temperature.) When temperature is reached, lower the heat to medium to maintain the oil at 180°C. Fry 3 or 4 pieces of chicken at a time, being careful not to crowd the pan. Fry for 15-18 minutes, turning once, until medium golden brown. Transfer chicken pieces to a baking tray lined with paper towel. Allow the oil to return to 180°C each time before adding more chicken. Repeat with remaining chicken, then serve.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
   </div>
 
   {% endblock %}

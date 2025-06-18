@@ -8,7 +8,7 @@ app = Flask (__name__)
 def index():
     card_data = (
         ("KFC", "What is KFC?", "More", "static/images/card1.png", "contact.html"),
-        ("Homemade KFC", "How to make chicken", "", "static/images/card2.png"),
+        ("Homemade KFC", "How to make chicken", "", "static/images/card2.png", "recipes.html"),
         ("KFC Resturaunts", "Description", "Button text", "static/images/card3.png"),
         ("Title", "Description", "Button text", "static/images/card4.png"),
         ("Title", "Description", "Button text", "static/images/card5.png"),
