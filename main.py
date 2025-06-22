@@ -7,12 +7,12 @@ app = Flask (__name__)
 @app.route('/')
 def index():
     card_data = (
-        ("KFC", "What is KFC?", "More", "static/images/card1.png", "contact.html"),
-        ("Homemade KFC", "How to make chicken", "", "static/images/card2.png", "recipes.html"),
+        ("KFC", "What is KFC?", "More", "static/images/card1.png", "recipes.html",),
+        ("Homemade KFC", "How to make chicken", "", "static/images/card2.png", "recipes.html", "disabled"),
         ("KFC Resturaunts", "Description", "Button text", "static/images/card3.png"),
-        ("Title", "Description", "Button text", "static/images/card4.png"),
-        ("Title", "Description", "Button text", "static/images/card5.png"),
-        ("Title", "Description", "Button text", "static/images/card6.png"),
+        ("The Colonel", "Description", "Button text", "static/images/card4.png"),
+        ("Reviews", "Description", "Button text", "static/images/card5.png"),
+        ("Guide to eating", "Description", "Button text", "static/images/card6.png"),
     )
     return render_template("index.html", cards=card_data),200
 
