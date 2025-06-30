@@ -9,10 +9,10 @@ def index():
     card_data = (
         ("KFC", "What is KFC?", "More", "static/images/card1.png", "recipes.html",),
         ("Homemade KFC", "How to make chicken", "", "static/images/card2.png", "recipes.html", "disabled"),
-        ("KFC Resturaunts", "Description", "Button text", "static/images/card3.png"),
-        ("The Colonel", "Description", "Button text", "static/images/card4.png"),
-        ("Reviews", "Description", "Button text", "static/images/card5.png"),
-        ("Guide to eating", "Description", "Button text", "static/images/card6.png"),
+        ("KFC Resturaunts", "Description", "Button text", "static/images/card3.png", "", "disabled"),
+        ("The Colonel", "Description", "Button text", "static/images/card4.png", "", "disabled"),
+        ("Reviews", "Description", "Button text", "static/images/card5.png", "", "disabled"),
+        ("Guide to eating", "Description", "Button text", "static/images/card6.png", "", "disabled"),
     )
     return render_template("index.html", cards=card_data),200
 
