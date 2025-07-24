@@ -1,14 +1,12 @@
-{% extends 'layout.html' %} {% block content %}
+
+{% extends 'layout.html' %}
+{% block content %}
 <div class="container">
   <div class="row">
-
-
-
     <h1>Recipe for KFC's fried chicken</h1>
     <div style="height: 100px"></div>
     <div class="container">
       <div class="row">
-        <div class="col-9"><h2></h2></div>
         <div class="col-4">
           <h2>Ingredients</h2>
           <ul>
@@ -49,10 +47,10 @@
             <li>Meanwhile, heat 7-8cm canola oil in a large casserole or similar heavy-based pan with high sides over medium-high heat to 180°C. (Use a deep-frying thermometer to check the temperature.) When temperature is reached, lower the heat to medium to maintain the oil at 180°C. Fry 3 or 4 pieces of chicken at a time, being careful not to crowd the pan. Fry for 15-18 minutes, turning once, until medium golden brown. Transfer chicken pieces to a baking tray lined with paper towel. Allow the oil to return to 180°C each time before adding more chicken. Repeat with remaining chicken, then serve.</li>
           </ol>
         </div>
-        
+        <div class="col-2 d-flex align-items-center">
+          <img src="static/images/chicken.png"/>
+        </div>
       </div>
     </div>
   </div>
-
-  {% endblock %}
-</div>
+{% endblock %}
